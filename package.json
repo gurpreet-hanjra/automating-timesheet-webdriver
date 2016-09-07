@@ -1,0 +1,28 @@
+{
+  "name": "automating-cab-booking",
+  "version": "1.0.0",
+  "description": "Automating cab booking with webdriver io",
+  "main": "test.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gurpreet-hanjra/automating-timesheet-webdriver.git"
+  },
+  "keywords": [
+    "webdriver",
+    "javascript",
+    "node",
+    "npm"
+  ],
+  "author": "Gurpreet Singh Hanjra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gurpreet-hanjra/automating-timesheet-webdriver/issues"
+  },
+  "homepage": "https://github.com/gurpreet-hanjra/automating-timesheet-webdriver#readme",
+  "dependencies": {
+    "webdriverio": "^4.2.8"
+  }
+}
