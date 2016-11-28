@@ -1,15 +1,25 @@
-var webdriverio = require('webdriverio');
-var options = {
+const credentails = require('./credentials.js');
+const webdriverio = require('webdriverio');
+const options = {
     desiredCapabilities: {
-        browserName: 'firefox'
+        browserName: 'chrome'
     }
 };
 
-var currentWeekIndex = 0;
+const url = 'https://mckinsey.moveinsync.com/Ncr/';
+var username;
+var password;
 
-var url = 'https://mckinsey.moveinsync.com/Ncr/',
-    username = 'gurpreet_singh_hanjra@mckinsey.com',
-    password = 'gyrml@143';
+//console.log(credentails.username);
+
+if (!credentails) {
+  username = credentails.username;
+  password = credentails.password;
+} else {
+  throw Error ('username and password not found. Please see readme.md to set it');
+}
+
+//console.log(username, password);
 
 webdriverio
     .remote(options)
@@ -30,7 +40,6 @@ webdriverio
     .then(function(value) {
         currentWeekIndex = Number(value) + 1;
         console.log(this, value, currentWeekIndex);
-
     })*/
     .click("[name='weekList'] option[value='2']")
     //.selectByIndex("[name='weekList']", currentWeekIndex)

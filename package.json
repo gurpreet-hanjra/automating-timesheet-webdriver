@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/gurpreet-hanjra/automating-timesheet-webdriver#readme",
   "dependencies": {
+    "node-inspector": "^0.12.8",
     "webdriverio": "^4.2.8"
   }
 }
