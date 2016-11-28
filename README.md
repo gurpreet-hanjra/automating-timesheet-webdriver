@@ -11,4 +11,4 @@ Make sure you have Java and added to the system path
 
 ### Run the test
 (open new terminal tab)
-node test.js
+`node test.js`
